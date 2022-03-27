@@ -12,7 +12,8 @@ namespace notify
         {
             // Getting connection key from the new resource
             var hubName = "cs-ionic-notifications";
-            //var primaryConnectionString = ""; // Get this from Azure Portal -> Manage -> Access Policies                        
+            //var primaryConnectionString = ""; // Get this from Azure Portal -> Manage -> Access Policies            
+            var primaryConnectionString = "Endpoint=sb://cs-ionic-notifications.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=DYtF3x++/+hedJBa+Wiuf2X9X/mvOlS9zE+tW3BQAi8=";
             var deviceToken = "BF19A750D18CD9D8BCF31D338354AA99CF42AB129CC662142A3D8A21579A55B6";
             if (args.Length > 0)
             {
