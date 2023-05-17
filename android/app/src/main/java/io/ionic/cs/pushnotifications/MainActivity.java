@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package io.ionic.cs.pushnotifications;
 
 import com.getcapacitor.BridgeActivity;
 

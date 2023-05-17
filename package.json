@@ -10,8 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-backend": "cd csharp-backend && dotnet build",
-    "run-backend": "cd csharp-backend && dotnet run"
+    "register-apple-device": "cd csharp-backend && dotnet build && dotnet run ios D6A38FA026DC62EA590CA1F75302988F23757A0A325804A71AC7DCFC51CE284B",
+    "register-android-device": "cd csharp-backend && dotnet build && dotnet run android dZpQf9djRY-3-i-e-pk2UQ:APA91bFJwwyTSLpqkm2OUnDysBwzkiekBsFxGa92IYCA4qZgICvc5niusM6bKvlzUI-KVCUiv5rsg_WaW6M_6ktchEHLtqGlbr-MsCCddpuhwNfWC9PHQxfL6rQGe17XpIZ_7-AAKsx3"    
   },
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^14.2.12",
     "@angular/platform-browser-dynamic": "^14.2.12",
     "@angular/router": "^14.2.12",
-    "@capacitor/android": "^5.0.0",
+    "@capacitor/android": "5.0.3",
     "@capacitor/app": "^5.0.0",
     "@capacitor/core": "^5.0.0",
     "@capacitor/haptics": "^5.0.0",
