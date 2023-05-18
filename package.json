@@ -10,8 +10,14 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "register-apple-device": "cd csharp-backend && dotnet build && dotnet run ios D6A38FA026DC62EA590CA1F75302988F23757A0A325804A71AC7DCFC51CE284B",
-    "register-android-device": "cd csharp-backend && dotnet build && dotnet run android dZpQf9djRY-3-i-e-pk2UQ:APA91bFJwwyTSLpqkm2OUnDysBwzkiekBsFxGa92IYCA4qZgICvc5niusM6bKvlzUI-KVCUiv5rsg_WaW6M_6ktchEHLtqGlbr-MsCCddpuhwNfWC9PHQxfL6rQGe17XpIZ_7-AAKsx3"    
+    "build-backend": "cd csharp-backend && dotnet build",
+    "build-fcm-backend": "cd csharp-fcm-backend && dotnet build",
+    "register-apple-device": "npm run build-backend && cd csharp-backend && dotnet run ios D6A38FA026DC62EA590CA1F75302988F23757A0A325804A71AC7DCFC51CE284B",
+    "register-android-device": "npm run build-backend && cd csharp-backend && dotnet run android dZpQf9djRY-3-i-e-pk2UQ:APA91bFJwwyTSLpqkm2OUnDysBwzkiekBsFxGa92IYCA4qZgICvc5niusM6bKvlzUI-KVCUiv5rsg_WaW6M_6ktchEHLtqGlbr-MsCCddpuhwNfWC9PHQxfL6rQGe17XpIZ_7-AAKsx3",
+    "send-notification": "npm run build-backend && cd csharp-backend && dotnet run send-ios message.json",
+    "send-image-notification": "npm run build-fcm-backend && cd csharp-fcm-backend && dotnet run send dZpQf9djRY-3-i-e-pk2UQ:APA91bFJwwyTSLpqkm2OUnDysBwzkiekBsFxGa92IYCA4qZgICvc5niusM6bKvlzUI-KVCUiv5rsg_WaW6M_6ktchEHLtqGlbr-MsCCddpuhwNfWC9PHQxfL6rQGe17XpIZ_7-AAKsx3",
+    "send-image-notification-apple": "npm run build-fcm-backend && cd csharp-fcm-backend && dotnet run send D6A38FA026DC62EA590CA1F75302988F23757A0A325804A71AC7DCFC51CE284B"
+    
   },
   "private": true,
   "dependencies": {

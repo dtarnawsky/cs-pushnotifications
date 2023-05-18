@@ -1,0 +1,21 @@
+{
+	"notification":{
+		"title":"Hi There",
+		"body":"This is a sample notification that should contain an image."
+	},
+    "android": {
+        "notification": {
+            "imageUrl": "https://ionic.io/blog/wp-content/uploads/2023/03/capacitor-5-beta-feature-image-2048x1024.png"
+        }
+    },
+    "apns": {
+        "payload": {
+            "aps": {
+                "mutable-content": 1
+            }
+        },
+        "fcm_options": {
+            "image": "https://ionic.io/blog/wp-content/uploads/2023/03/capacitor-5-beta-feature-image-2048x1024.png"
+        }
+    }
+}

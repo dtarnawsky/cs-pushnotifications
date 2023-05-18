@@ -1,0 +1,5 @@
+{
+    "aps": {
+        "alert": "This is a test push notification"
+    }
+}
